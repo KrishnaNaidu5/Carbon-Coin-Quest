@@ -413,45 +413,20 @@ router.get("/transaction-table", isUser, function (req, res) {
 // });
 
 
-router.get("/buy-coin", isUser, function (req, res) {
+router.get("/buy-coin", function (req, res) {
   // var error ="";
   // var success = "";
   error = req.flash("err_msg");
   success = req.flash("success_msg");
-  var user_id = req.session.re_us_id;
-  Tokensettings.findOne().then((btcresult) => {
-    var fbt = btcresult.etherValue;
-    var tfbt = fbt * 0.0000000065;
-    Importwallet.findOne(
-      { user_id: user_id, login_status: "login" },
-      function (err, loginwallet) {
-        if (err) {
-          console.log("Something went wrong");
-        } else {
-          if (loginwallet != "" && loginwallet != undefined) {
-            Userwallet.findOne(
-              { _id: loginwallet.wallet_id },
-              function (err, result) {
-                if (err) {
-                  console.log("Something went wrong");
-                } else {
-                  var wallet_address = result.wallet_address;
+  // var user_id = req.session.re_us_id;
+
+                  // var wallet_address = result.wallet_address;
                   res.render("buy-coin", {
                     error,
                     success,
-                    wallet_address,
-                    user_id,
-                    fbt,
-                    tfbt,
+                    
                   });
-                }
-              }
-            );
-          }
-        }
-      }
-    );
-  });
+  
 });
 
 // ------------------transaction ss storage-----------
