@@ -99,5 +99,5 @@ app.get('/', (req, res) => {
 
 // Set 'views' directory for any views 
 // being rendered res.render()
-const PORT = 450;
+const PORT = 5501;
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));

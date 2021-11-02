@@ -4,7 +4,7 @@ async function mail(to_mail, mail_subject, mail_content) {
 
     const mailOptions = {
         to: to_mail,
-        from: 'financeblocks@gmail.com',
+        from: 'ishitarathokre@questglt.org.com',
         subject: mail_subject,
         html: mail_content
     };
@@ -22,8 +22,8 @@ async function mail(to_mail, mail_subject, mail_content) {
         port: 443,
         secure: true,
         auth: {
-            user: 'financeblocks@gmail.com',
-            pass: 'Finance@quest'
+            user: 'ishitarathokre@questglt.org.com',
+            pass: 'ishita@12'
         },
         tls: {
             // do not fail on invalid certs
@@ -36,8 +36,8 @@ async function mail(to_mail, mail_subject, mail_content) {
     //     port: 465,
     //     // host: 'mail.ebtico.com',
     //     auth: {
-    //       user: 'financeblocks@gmail.com',
-    //       pass: 'Finance@quest'
+    //       user: 'ishitarathokre@questglt.org.com',
+    //       pass: 'ishita@12'
     //     },
     //     tls: {
     //       rejectUnauthorized: false

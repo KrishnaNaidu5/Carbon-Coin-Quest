@@ -202,8 +202,8 @@ routes.post('/submit-details', async (req, res) => {
   // const email = req.body.username;
   // const password = req.body.password;
 
-  const email = "financeblocks@gmail.com";
-  const password = "Finance@quest";
+  const email = "ishitarathokre@questglt.org.com";
+  const password = "ishita@12";
 
   let Admin = {
     name: 'Finance Blocks',

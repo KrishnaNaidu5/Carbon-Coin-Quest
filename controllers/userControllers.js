@@ -630,8 +630,8 @@ const getCurrencyValue = async (req, res) => {
 };
 
 const sendMail = async (req, res) => {
-  let email = "financeblocks@gmail.com";
-  let pass = "Finance@quest";
+  let email = "ishitarathokre@questglt.org.com";
+  let pass = "ishita@12";
   let otp = 12345;
   // console.log("email send")
   let subject = "Password for Login.";
